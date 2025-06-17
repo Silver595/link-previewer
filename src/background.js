@@ -1,8 +1,8 @@
 // background.js
 // Handles preview fetching and link safety check
 
-const VIRUSTOTAL_API_KEY = '22fd93689797a5daef7fac6ea0ca8ac8c21a11d52867be85e1db7fe811cd6ac6'; // <-- Insert your VirusTotal API key
-const LINKPREVIEW_API_KEY = '56a77fb05a8eecc566793a7f51ade59e'; // <-- Insert your LinkPreview API key
+const VIRUSTOTAL_API_KEY = ''; // <-- Insert your VirusTotal API key
+const LINKPREVIEW_API_KEY = ''; // <-- Insert your LinkPreview API key
 
 async function checkLinkSafety(url) {
   // VirusTotal API v3: https://developers.virustotal.com/reference/url-info
