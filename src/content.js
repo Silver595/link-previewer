@@ -58,7 +58,6 @@
     });
   }
 
-  // Helper functions to extract info from preview HTML
   function extractTitle(html) {
     const m = html && html.match(/<b>(.*?)<\/b>/i);
     return m ? m[1] : '';
