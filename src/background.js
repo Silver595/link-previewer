@@ -23,12 +23,12 @@ async function checkLinkSafety(url) {
     }
     return { safe: true };
   } catch (e) {
-    return { safe: true }; // On error, default to safe
+    return { safe: true }; 
   }
 }
 
 async function fetchPreview(url) {
-  // LinkPreview API: https://www.linkpreview.net/
+ 
   try {
     const resp = await fetch(`https://api.linkpreview.net/?key=${LINKPREVIEW_API_KEY}&q=${encodeURIComponent(url)}`);
     if (!resp.ok) return { error: 'API request failed' };
