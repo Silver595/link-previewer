@@ -1,0 +1,103 @@
+#popup-card {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  border-radius: 12px;
+  border: 1.5px solid #e0e0e0;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+  padding: 26px 24px 16px 24px;
+  width: 350px;
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+#popup-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  border-bottom: 1.5px solid #ececec;
+  padding-bottom: 10px;
+}
+#popup-icon {
+  width: 34px;
+  height: 34px;
+}
+#popup-title {
+  font-size: 1.13em;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: 0.01em;
+}
+#popup-status {
+  font-size: 1em;
+  margin-bottom: 4px;
+  padding: 7px 14px;
+  border-radius: 7px;
+  width: fit-content;
+  border: 1.5px solid #e0e0e0;
+  background: #fafbfc;
+  color: #222;
+  font-weight: 500;
+  transition: all 0.2s;
+  display: inline-block;
+}
+#popup-status.safe {
+  border-color: #b2e6b2;
+  background: #f6fff6;
+  color: #1a7f1a;
+}
+#popup-status.unsafe {
+  border-color: #f5b2b2;
+  background: #fff6f6;
+  color: #c00;
+}
+#popup-preview {
+  margin: 10px 0 0 0;
+  border-top: 1.5px solid #ececec;
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#preview-img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+#preview-img {
+  border-radius: 7px;
+  border: 1px solid #eee;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  max-width: 100%;
+  max-height: 90px;
+}
+#preview-title {
+  font-weight: 600;
+  font-size: 1.07em;
+  color: #222;
+  margin-bottom: 2px;
+}
+#preview-desc {
+  color: #555;
+  margin: 2px 0 2px 0;
+  font-size: 0.98em;
+}
+#preview-url {
+  color: #aaa;
+  font-size: 0.93em;
+  word-break: break-all;
+}
+#popup-footer {
+  margin-top: 14px;
+  color: #bbb;
+  font-size: 0.93em;
+  text-align: right;
+  border-top: 1.5px solid #ececec;
+  padding-top: 10px;
+}
+#popup-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  border-color: #b2e6b2;
+}
